@@ -55,14 +55,6 @@ const plugins: IPlugin[] = [
     '@umijs/plugin-qiankun',
     {
       master: {
-        apps: [
-          {
-            name: '设备',
-            entry: 'http://localhost:8001/device',
-            base: '/device',
-            mountElementId: 'root-subapp-container',
-          },
-        ],
         defer: true,
         jsSandbox: true,
         prefetch: true,
@@ -113,7 +105,7 @@ export default {
           component: './home',
         },
         {
-          path: '/device',
+          path: '/godevice',
           name: '设备',
           icon: 'global',
           exact: true,
